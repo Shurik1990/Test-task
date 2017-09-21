@@ -11,17 +11,81 @@
 	<body>
         <header class="container">
             <div class="row">
-                <a class="col-sm-4 logo" href="#"><img src="images/logo.png"/></a>
-                <nav class="col-sm-8 text-right">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+            <a class="col-sm-4 logo" href="#"><img src="images/logo.png"/></a>
+            <div class="col-sm-8 text-right">
+            <nav role="navigation" class="navbar navbar-default navbar-right">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse nav">
+                <ul class="nav navbar-nav">
+                  <li><a href="#">Home</a></li>
+                  <li class="active"><a href="#">Products</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            </nav>
+            </div>
             </div>
         </header>
+        
+        
+        
+        
+        
+        
+        
+        <div class="clear"></div>
+        <div class="slider"><!-- Карусель -->
+        <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">  
+            <!-- Слайды карусели -->
+            <div class="carousel-inner">
+                <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                <div class="active item">
+                    <div class="carousel-caption">
+                        <img class="iphone" src="images/iphone.png" alt="image-placeholder"/>
+                        <div class="right-text">
+                            <h3>Lorem Ipsum is simply</h3>
+                            <p>dummy text of the</p>
+                            <p>printing & typesetting</p>
+                            <form action=""><button name="sign"><img src="images/check.png"/>Sign up now</button></form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Слайд №2 -->
+                <div class="item">
+                    <div class="carousel-caption">
+                        <img class="iphone" src="images/iphone.png" alt="image-placeholder"/>
+                        <div class="right-text">
+                            <h3>Lorem Ipsum is simply</h3>
+                            <p>dummy text of the</p>
+                            <p>printing & typesetting</p>
+                            <form action=""><button name="sign"><img src="images/check.png"/>Sign up now</button></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Навигация для карусели -->
+        <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        </div>
+        <div class="clear"></div>
+       
+        
+        
 		<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 	</body>
