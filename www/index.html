@@ -6,7 +6,6 @@
         <title>Test task</title>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 		<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
-		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
 	</head>
 	<body>
@@ -45,18 +44,54 @@
 			<!--/.Navbar-->  
 		</header>
 		<!--Main Navigation-->
+		
+					<!--Slider-->
+					<div class="slider"><!-- Карусель -->
+					<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">  
+						<!-- Слайды карусели -->
+						<div class="carousel-inner">
+							<!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+							<div class="active item">
+								<div class="carousel-caption">
+									<img class="iphone" src="images/iphone.png" alt="image-placeholder"/>
+									<div class="right-text">
+										<h3>Lorem Ipsum is simply</h3>
+										<p>dummy text of the</p>
+										<p>printing & typesetting</p>
+										<form action=""><button name="sign"><img src="images/check.png"/>Sign up now</button></form>
+									</div>
+								</div>
+							</div>
+							<!-- Слайд №2 -->
+							<div class="item">
+								<div class="carousel-caption">
+									<img class="iphone" src="images/iphone.png" alt="image-placeholder"/>
+									<div class="right-text">
+										<h3>Lorem Ipsum is simply</h3>
+										<p>dummy text of the</p>
+										<p>printing & typesetting</p>
+										<form action=""><button name="sign"><img src="images/check.png"/>Sign up now</button></form>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- Навигация для карусели -->
+					<!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+						<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+						<a class="carousel-control right" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+					</div>
+					<div class="clear"></div>
+					
+				<!--Slider-->
+				
 		<!--Main container-->
 		<div class="container">
-			<!--Grid row-->
-			<div class="row">
-				<!--Slider-->
-				<div class="col-md-12">
-					<!--Featured image -->
-					<img src="images/banner1-.png" class="img-fluid">
-				</div>
-				<!--Slider-->
-			</div>
-			<!--Grid row-->
 		<div class="row">
 			<!--Grid column-->
 			<div class="col-lg-4 col-md-12">
@@ -74,7 +109,7 @@
 						<!--Title-->
 						<h4 class="card-title">Contrary to popular</h4>
 						<!--Text-->
-						<p class="card-text">Lorem Ipsum is not simply random text. It has roots in a piece</p>
+						<p class="card-text">Lorem Ipsum is not simply random text.<br>It has roots in a piece</p>
 					</div>
 				</div>
 				<!--/.Card-->
@@ -96,7 +131,7 @@
 						<!--Title-->
 						<h4 class="card-title">Contrary to popular</h4>
 						<!--Text-->
-						<p class="card-text">Lorem Ipsum is not simply random text. It has roots in a piece</p>
+						<p class="card-text">Lorem Ipsum is not simply random text.<br>It has roots in a piece</p>
 					</div>
 				</div>
 				<!--/.Card-->
@@ -118,7 +153,7 @@
 						<!--Title-->
 						<h4 class="card-title">Contrary to popular</h4>
 						<!--Text-->
-						<p class="card-text">Lorem Ipsum is not simply random text. It has roots in a piece</p>
+						<p class="card-text">Lorem Ipsum is not simply random text.<br>It has roots in a piece</p>
 					</div>
 				</div>
 				<!--/.Card-->
@@ -129,14 +164,15 @@
 		<!--Grid row-->
 			<div class="row">
 				<!--Grid column-->
-				<div class="col-md-6">
-					<h2>The Shopping cart</h2>
+				<div class="col-md-6 shopping">
+					<h1>The Shopping cart</h1>
 					<!--Featured image -->
 					<img src="images/cart.png" class="img-fluid">
 				</div>
 				<!--Grid column-->
 				<!--Grid column-->
-				<div class="col-md-6">
+				<div class="col-md-6 shopping">
+				    <div class="bot">
 					<h2>Some Bullet text here</h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
 					<p>Lorem Ipsum has been the industry's standard dummy text ever</p>
@@ -145,6 +181,7 @@
 					<p>But also the leap into electronic typesetting,</p>
 					<p>Remaining essentially unchanged. It was popularised</p>
 					<p>The release of Letraset sheets containing Lorem Ipsum passages</p>
+					
 				</div>
 				<!--Grid column-->
 			</div>

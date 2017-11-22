@@ -12,11 +12,25 @@
     font-style: normal;
     font-weight: normal;
 }
-
-body {
-	margin: 0 auto;
+/* General */
+html, body {
+    font: 12px Proxima Nova, sans-serif;
+    margin: 0;
+    background: #fff;
+    width: 100%;
 }
 
+.clear {
+	clear: both;
+	font-size: 0px;
+}
+
+a {
+	text-decoration: none;
+    cursor: pointer;
+}
+
+/* Navbar */
 .navbar-toggler {
 	border: none;
 }
@@ -27,10 +41,181 @@ body {
     height: 44px;
 }
 
+
+
+/* Slider */
+.carousel-control .glyphicon-chevron-left {
+    background: url("../images/button-right.png") no-repeat;
+    width: 25px;
+    height: 63px;
+}
+.carousel-control .glyphicon-chevron-right {
+    background: url("../images/button-left.png") no-repeat;
+    width: 25px;
+    height: 63px;
+}
+.glyphicon-chevron-left:before {
+    display: none;
+}
+.glyphicon-chevron-right:before {
+    display: none;
+}
+.carousel-control.right {
+    background-image: none;
+}
+.carousel-control.left {
+    background-image: none;
+}
+.item {
+    height: 480px !important;
+    position: relative;
+}
+.slider::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 480px;
+}
+.slider::after {
+    background: url("../images/Layer-6.png");
+    bottom: -471px;
+}
+.carousel-caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 10%;
+    left: 13%;
+    right: 13%;
+    padding: 0;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+.carousel {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.slider {
+    background: url("../images/banner1-.png") no-repeat center;   
+    background-size: cover;
+    height: 480px !important;
+    position: relative;
+}
+.iphone img {
+    display: block;
+    float: left !important;
+    width: 21.56em;
+    height: 27.25em;
+}
+.right-text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: left;
+    font-family: Segoe WP Light, sans-serif;
+}
+.right-text h3 {
+    font-size: 42.3px;
+    font-weight: bold;
+}
+.right-text p {
+    font-size: 26.3px;
+}
+button[name="sign"] {
+    display: block;
+    width: 170px;
+    height: 40px;
+    line-height: 22.3px;
+    background-color: #6699ff;
+    border: none;
+    font-size: 22.3px;
+    vertical-align: middle;
+    margin: 25px 0 0 15px;
+    padding: 0;
+	cursor: pointer;
+}
+button[name="sign"] img {
+    padding-right: 10px;
+}
+button[name="sign"]:hover {
+    background-color: #cc3333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card {
 	text-align: center;
 	border: none;
+	padding-top: 80px;
 }
+.card-title {
+	font-family: Segoe WP Light, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	color: #6699ff;
+	margin-top: 25px;
+}
+.card-text {
+	font-family: Segoe WP Light, sans-serif;
+	font-size: 15px;
+	font-weight: bolder;
+	color: #909090;
+}
+
+.shopping {
+	font-family: Segoe WP Light, sans-serif;
+	font-size: 15px;
+	margin-top: 45px;
+}
+
+.shopping h1 {
+	font-size: 40px;
+	font-weight: bolder;
+	color: #6c6c6c;
+	padding-bottom: 25px;
+}
+
+.shopping h2 {
+	font-size: 25px;
+	font-weight: bolder;
+	color: #6c6c6c;
+	padding-bottom: 20px;
+}
+.bot {
+
+}
+
 
 footer {
 	text-align: center;
