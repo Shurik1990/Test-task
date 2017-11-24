@@ -9,86 +9,91 @@
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
 	</head>
 	<body>
-        <!--Main Navigation-->
-		<header>
-			<!--Navbar-->
-			<nav class="navbar navbar-expand-lg navbar-light blue-grey lighten-5">
-				<!-- Navbar brand -->
-				<a class="navbar-brand" href="#">
-					<img src="images/logo.png" height="44" alt="">
-				</a>
-				<!-- Collapse button -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-					aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-				<!-- Collapsible content -->
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<!-- Links -->
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Products</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Services</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
-						</li>
-					</ul>
-					<!-- Links -->
+	<div class="container">
+	<div class="row">
+	<div class="col-md-12">
+	<header>
+		<!-- Классы navbar и navbar-default -->
+		<nav class="navbar navbar-default">
+			<!-- Контейнер -->
+			<div class="container-fluid">
+			<!-- Заголовок -->
+				<div class="navbar-header">
+				  <!-- Кнопка «Гамбургер» -->
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+					<span class=sr-only>Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <!-- Бренд или название сайта -->
+				  <a class="navbar-brand" href="#">
+					<img src="images/logo.png" height="44" alt="Prechu">
+				  </a>
 				</div>
-				<!-- Collapsible content -->
-			</nav>
-			<!--/.Navbar-->  
-		</header>
-		<!--Main Navigation-->
+				<!-- Основная часть меню -->
+				<div class="collapse navbar-collapse" id="navbar-main">
+				
+				  <!-- Содержимое основной части -->
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Home <span class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="#">Products</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				  </ul>
+				  
+				</div>
+			</div>
+		</nav>
+	</header>
+	</div>
+	</div>
+	</div>
 		
-					<!--Slider-->
-					<div class="slider"><!-- Карусель -->
-					<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">  
-						<!-- Слайды карусели -->
-						<div class="carousel-inner">
-							<!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-							<div class="active item">
-								<div class="carousel-caption">
-									<img class="iphone" src="images/iphone.png" alt="image-placeholder"/>
-									<div class="right-text">
-										<h3>Lorem Ipsum is simply</h3>
-										<p>dummy text of the</p>
-										<p>printing & typesetting</p>
-										<form action=""><button name="sign"><img src="images/check.png"/>Sign up now</button></form>
-									</div>
-								</div>
-							</div>
-							<!-- Слайд №2 -->
-							<div class="item">
-								<div class="carousel-caption">
-									<img class="iphone" src="images/iphone.png" alt="image-placeholder"/>
-									<div class="right-text">
-										<h3>Lorem Ipsum is simply</h3>
-										<p>dummy text of the</p>
-										<p>printing & typesetting</p>
-										<form action=""><button name="sign"><img src="images/check.png"/>Sign up now</button></form>
-									</div>
-								</div>
+		<!--Slider-->
+		<div class="slider">
+			<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">  
+				<!-- Слайды карусели -->
+				<div class="carousel-inner">
+					<!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+					<div class="active item">
+						<div class="carousel-caption">
+							<img class="iphone" src="images/iphone.png" alt="image-placeholder"/>
+							<div class="right-text">
+								<h3>Lorem Ipsum is simply</h3>
+								<p>dummy text of the</p>
+								<p>printing & typesetting</p>
+								<form action=""><button name="sign"><img src="images/check.png"/>Sign up now</button></form>
 							</div>
 						</div>
-					<!-- Навигация для карусели -->
-					<!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-						<a class="carousel-control left" href="#myCarousel" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-						</a>
-						<!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-						<a class="carousel-control right" href="#myCarousel" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-						</a>
 					</div>
+					<!-- Slide №2 -->
+					<div class="item">
+						<div class="carousel-caption">
+							<img class="iphone" src="images/iphone.png" alt="image-placeholder"/>
+							<div class="right-text">
+								<h3>Lorem Ipsum is simply</h3>
+								<p>dummy text of the</p>
+								<p>printing & typesetting</p>
+								<form action=""><button name="sign"><img src="images/check.png"/>Sign up now</button></form>
+							</div>
+						</div>
 					</div>
-					<div class="clear"></div>
+				</div>
+				<!-- Навигация для карусели -->
+				<!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+		<div class="clear"></div>
 					
-				<!--Slider-->
+		<!--Slider-->
 				
 		<!--Main container-->
 		<div class="container">
@@ -161,8 +166,8 @@
 			<!--Grid column-->
 		</div>
 		<!--Grid row-->
-		<!--Grid row-->
 			<div class="row">
+			    <div class="bot">
 				<!--Grid column-->
 				<div class="col-md-6 shopping">
 					<h1>The Shopping cart</h1>
@@ -172,7 +177,6 @@
 				<!--Grid column-->
 				<!--Grid column-->
 				<div class="col-md-6 shopping">
-				    <div class="bot">
 					<h2>Some Bullet text here</h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
 					<p>Lorem Ipsum has been the industry's standard dummy text ever</p>
@@ -181,14 +185,14 @@
 					<p>But also the leap into electronic typesetting,</p>
 					<p>Remaining essentially unchanged. It was popularised</p>
 					<p>The release of Letraset sheets containing Lorem Ipsum passages</p>
-					
-				</div>
 				<!--Grid column-->
+			</div>
 			</div>
 			<!--Grid row-->
 		</div>
 		<!--Main container-->
-		<hr />
+		</div>
+		<div class="line"></div>
 		<!--Footer-->
 		<footer class="page-footer blue center-on-small-only">
 			<!--Copyright-->

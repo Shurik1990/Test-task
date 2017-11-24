@@ -31,14 +31,9 @@ a {
 }
 
 /* Navbar */
-.navbar-toggler {
-	border: none;
-}
-
-.navbar-light .navbar-toggler-icon {
-	background-image: url(../images/menu.png);
-	width: 58px;
-    height: 44px;
+.navbar .navbar-default {
+    background-color: none !important; 
+    border-color: none !important; 
 }
 
 
@@ -144,36 +139,6 @@ button[name="sign"]:hover {
     background-color: #cc3333;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .card {
 	text-align: center;
 	border: none;
@@ -199,6 +164,11 @@ button[name="sign"]:hover {
 	margin-top: 45px;
 }
 
+.shopping p {
+	text-align: left;
+	line-height: 25px;
+}
+
 .shopping h1 {
 	font-size: 40px;
 	font-weight: bolder;
@@ -210,13 +180,23 @@ button[name="sign"]:hover {
 	font-size: 25px;
 	font-weight: bolder;
 	color: #6c6c6c;
-	padding-bottom: 20px;
+	padding: 50px 0 20px 0;
+	text-align: left;
 }
 .bot {
-
+    text-align: center;
 }
 
+.line {
+	border-top: 1px solid #eee;
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 footer {
 	text-align: center;
+	font-family: Segoe WP Light, sans-serif;
+	font-size: 15px;
+	color: #909090;
+	padding: 10px 0 40px 0;
 }
