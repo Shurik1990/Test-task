@@ -21,13 +21,43 @@
 	.shopping img {transform: scale(0.7); margin: -5%;}
 	.shopping h1 {padding-bottom: 0 !important; padding-top: 20px;}
 	.card {padding-top: 20px !important; display: flex; flex-direction: row; text-align: left; justify-content: center;}
-	.card img {transform: scale(0.75); margin: -5%; text-align: justify; margin-left: -40%;}
+	.card img {transform: scale(0.75); margin: -5%; text-align: justify; margin-left: 10%;}
 	.card-body {text-align: left; display: flex; flex-direction: column; justify-content: center;}
+	.card-body {width: 48% !important;}
 	.card-title {font-size: 28px !important;}
 	.line-card {display: block !important;}
+	.slider:after {visibility: hidden;}
+	.right-text {padding-left: 50px;}
+}
+@media only screen and (min-width: 870px) {
+	.slider {height: 480px !important;}
+	.item {height: 480px !important;}
+	.active>.item {height: 300px !important;}
+}
+@media only screen and (max-width: 870px) {
+	.slider {height: 300px !important;}
+	.item {height: 300px !important;}
+	.active>.item {height: 300px !important;}
+	.right-text {padding-left: 10px;}
+	.right-text h3 {font-size: 35px !important;}
+	.right-text p {font-size: 18px !important;}
+	.carousel-caption .iphone {transform: scale(0.65);}
+}
+@media only screen and (max-width: 755px) {
+	button[name="sign"] {margin: 10px 0 0 0 !important;}
+}
+@media only screen and (max-width: 730px) {
+	.carousel-control .glyphicon-chevron-left {display: none;}
+	.carousel-control .glyphicon-chevron-right {display: none;}
+	.carousel-caption {left: 0 !important; margin: 0 !important; right: 2% !important;}
+	.right-text {padding-left: 0 !important; margin-left: -10px !important; color: #ffffffd1;}
+	button[name="sign"] {margin: 15px 0 0 0 !important;}
+	.right-text h3 {font-size: 30px !important; font-weight: normal !important;}
+	.right-text p {font-size: 18px !important;}
 }
 @media only screen and (max-width: 640px) {
-	
+	.carousel-caption .iphone {transform: scale(0.6); margin-left: -30px;}
+	.right-text {margin-right: 25px !important;}
 }
 
 /* General */
@@ -140,10 +170,9 @@ a {
     background-image: none;
 }
 .item {
-    height: 480px !important;
     position: relative;
 }
-.slider::after {
+.slider:after {
     position: absolute;
     content: " ";
     display: block;
@@ -151,7 +180,7 @@ a {
     width: 100%;
     height: 480px;
 }
-.slider::after {
+.slider:after {
     background: url("../images/Layer-6.png");
     bottom: -471px;
 }
@@ -174,7 +203,6 @@ a {
 .slider {
     background: url("../images/banner1-.png") no-repeat center;   
     background-size: cover;
-    height: 480px !important;
     position: relative;
 }
 .iphone img {
@@ -229,6 +257,12 @@ button[name="sign"]:hover {
 	color: #6699ff;
 	margin-top: 25px;
 }
+
+.card-body {
+	width: 72%;
+    margin: 0 auto;
+}
+
 .card-text {
 	font-family: Segoe WP Light, sans-serif;
 	font-size: 15px;
